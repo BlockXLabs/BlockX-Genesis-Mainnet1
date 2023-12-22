@@ -1,8 +1,8 @@
 #!/bin/bash
 
-KEY="mynode"
+KEY="node"
 CHAINID="blockx_50-1"
-MONIKER="My Node"
+MONIKER="My_Node"
 KEYRING="file" 
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
@@ -60,4 +60,5 @@ jq '.app_state.slashing.params.slash_fraction_double_sign = "0.08000000000000000
 jq '.app_state.gov.voting_params.voting_period = "1209600s"' genesis.json > temp.json && mv temp.json genesis.json
 jq '.app_state.gov.voting_params.voting_period = "1209600s"' genesis.json > temp.json && mv temp.json genesis.json
 
+cd /root/go/bin
 ./blockxd validate-genesis

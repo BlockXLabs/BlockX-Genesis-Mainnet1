@@ -58,7 +58,6 @@ jq '.app_state.slashing.params.signed_blocks_window = "40000"' genesis.json > te
 jq '.app_state.slashing.params.min_signed_per_window = "0.500000000000000000"' genesis.json > temp.json && mv temp.json genesis.json
 jq '.app_state.slashing.params.slash_fraction_double_sign = "0.080000000000000000"' genesis.json > temp.json && mv temp.json genesis.json
 jq '.app_state.gov.voting_params.voting_period = "1209600s"' genesis.json > temp.json && mv temp.json genesis.json
-jq '.app_state.gov.voting_params.voting_period = "1209600s"' genesis.json > temp.json && mv temp.json genesis.json
 
 cd /root/go/bin
 ./blockxd validate-genesis

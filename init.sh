@@ -1,7 +1,7 @@
 #!/bin/bash
 
 KEY="node"
-CHAINID="blockx_50-1"
+CHAINID="blockx_100-1"
 MONIKER="My_Node"
 KEYRING="file" 
 KEYALGO="eth_secp256k1"
